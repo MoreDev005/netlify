@@ -1,7 +1,7 @@
 const express = require('express');
 const serverless = require('serverless-http');
 const app = express();
-const ai = require('./ai.js')
+const yta = require('./yta.js')
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -12,10 +12,10 @@ router.get('/', (req, res) => {
   
 })
 
-router.get('/ai/:id', async (req, res) => {
+router.get('/yta/:id', async (req, res) => {
 const q = req.query.data
  try{
-const respon = await ai(q)
+const respon = await yta(q)
   res.send(respon)
 }catch(e){
     res.end()
