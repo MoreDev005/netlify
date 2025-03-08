@@ -4,7 +4,6 @@
   "description": "Every new repl comes with a `.replit` and a `replit.nix` file that let you configure your repl to do just about anything in any language!",
   "main": "index.js",
     "scripts": {
-    "start": "./node_modules/.bin/netlify-lambda serve functions",
     "build": "./node_modules/.bin/netlify-lambda build functions"
   },
   "author": "",
