@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
   
 })
 
-router.get('/ai/:id', (req, res) => {
+router.get('/ai/:id', async (req, res) => {
 const q = req.query.data
  try{
 const respon = await downloaderyt(q)
